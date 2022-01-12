@@ -1,0 +1,52 @@
+import 'package:flutter/material.dart';
+
+
+class RegisterController {
+
+  BuildContext? context;
+
+  TextEditingController nameController = new TextEditingController();
+
+  TextEditingController userController = new TextEditingController();
+
+  TextEditingController emailController = new TextEditingController();
+
+  TextEditingController passController = new TextEditingController();
+
+  TextEditingController confirmPassController = new TextEditingController();
+
+
+  Future? init(BuildContext context) {
+
+    this.context = context;
+
+  }
+
+
+  void register() {
+
+    String name = nameController.text;
+
+    String user = userController.text;
+
+   String email = emailController.text.trim();
+
+    String pass = passController.text.trim();
+
+    String confirmPass = confirmPassController.text.trim();
+
+
+
+    print(name);
+
+    print(user);
+
+    print(email);
+
+    print(pass);
+
+    print(confirmPass);
+
+  }
+
+}
